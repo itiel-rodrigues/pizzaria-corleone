@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pizzaria Corleone | Colina</title>
+
+    <meta
+        name="description"
+        content="Pizzaria Corleone - Colina. Pizzas, bebidas e muito sabor."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-icon">🍕</span>
+            <span>PIZZARIA CORLEONE</span>
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                PIZZAS • BEBIDAS • COLINA
+            </span>
+
+            <h1>
+                Pizzaria Corleone
+                <br>
+                o sabor que você merece!
+            </h1>
+
+            <p>
+                Pizzas feitas na hora, ingredientes selecionados
+                e aquele sabor que dá vontade de pedir de novo.
+            </p>
+
+            <a href="#cardapio" class="hero-button">
+                VER CARDÁPIO
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CARDÁPIO ================= -->
+
+    <main id="cardapio" class="menu-section">
+
+        <div class="section-title">
+
+            <h2>Nosso Cardápio</h2>
+
+            <p>
+                Escolha uma categoria
+            </p>
+
+        </div>
+
+
+        <!-- CATEGORIAS -->
+
+        <div class="categories">
+
+            <button
+                class="category active"
+                data-category="pizzas"
+            >
+                🍕 Pizzas
+            </button>
+
+            <button
+                class="category"
+                data-category="bebidas"
+            >
+                🥤 Bebidas
+            </button>
+
+        </div>
+
+
+        <!-- PRODUTOS -->
+
+        <div id="products" class="products"></div>
+
+    </main>
+
+
+    <!-- ================= CARRINHO ================= -->
+
+    <button id="cartButton" class="cart-button">
+
+        🛒
+
+        <span>
+            Carrinho
+        </span>
+
+        <strong id="cartCount">
+            0
+        </strong>
+
+    </button>
+
+
+    <!-- ================= MODAL CARRINHO ================= -->
+
+    <div id="cartModal" class="modal">
+
+        <div class="cart">
+
+            <div class="cart-header">
+
+                <h2>
+                    Seu pedido
+                </h2>
+
+                <button id="closeCart">
+                    ×
+                </button>
+
+            </div>
+
+
+            <div id="cartItems" class="cart-items"></div>
+
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+
+            <div class="customer-form">
+
+                <h3>
+                    Dados para o pedido
+                </h3>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Seu nome"
+                >
+
+                <input
+                    type="text"
+                    id="customerAddress"
+                    placeholder="Endereço para entrega"
+                >
+
+                <textarea
+                    id="customerObservation"
+                    placeholder="Observação (opcional)"
+                ></textarea>
+
+            </div>
+
+
+            <button
+                id="whatsappButton"
+                class="whatsapp-button"
+            >
+                FINALIZAR PELO WHATSAPP
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CONTATO ================= -->
+
+    <section id="contato" class="contact-section">
+
+        <div class="contact-content">
+
+            <span>
+                PIZZARIA CORLEONE
+            </span>
+
+            <h2>
+                Pizzaria Corleone - Colina
+            </h2>
+
+            <p>
+                📍 Colina
+            </p>
+
+            <div class="phones">
+
+                <a href="tel:3232135683">
+                    📞 (32) 3213-5683
+                </a>
+
+                <a href="tel:32984638449">
+                    📱 (32) 98463-8449
+                </a>
+
+                <a href="tel:32999407668">
+                    📱 (32) 99940-7668
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Pizzaria Corleone - Colina. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
